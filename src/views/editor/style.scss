@@ -1,0 +1,56 @@
+.editor {
+  min-height: 100vh;
+}
+
+.mjx-editor {
+  position: relative;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.05);
+
+  .mjx-editor-tool {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .mjx-editor-footer {
+    box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.05);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 20px 15px;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+
+
+}
+
+.mjx-editor-container {
+  width: 768px;
+
+
+  padding: 45.5px;
+  position: relative;
+
+  .mjx-editor-skin {
+    // all: unset;
+    outline: inherit;
+    border: none !important;
+    box-shadow: none !important;
+    // min-height: calc(100vh - 240px);
+    // max-height: calc(100vh - 240px)
+  }
+
+  p.is-editor-empty:first-child::before {
+    color: #999999;
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+  }
+}

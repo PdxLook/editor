@@ -1,0 +1,17 @@
+.mjx-md-editor {
+  .md-editor {
+    height: 666px;
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: content-box;
+    }
+
+    ::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+      display: block;
+    }
+  }
+}
